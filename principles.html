@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title data-i18n="meta.principles.title">Принципы — Elyrion</title>
+<meta name="description" content="Шесть правил, по которым Elyrion принимает решения об Elyon AI." data-i18n-content="meta.principles.desc">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#050505" media="(prefers-color-scheme: dark)">
+<link rel="icon" type="image/png" href="assets/img/favicon-for-light-tab.png" media="(prefers-color-scheme: light)">
+<link rel="icon" type="image/png" href="assets/img/favicon-for-dark-tab.png" media="(prefers-color-scheme: dark)">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+<script>
+(function(){var d=document.documentElement;try{
+var t=localStorage.getItem('elyrion-theme');
+if(!t){t=matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light';}
+d.setAttribute('data-theme',t);
+var l=localStorage.getItem('elyrion-lang');
+if(!l){l=((navigator.language||'en').toLowerCase().indexOf('ru')===0)?'ru':'en';}
+d.lang=l;}catch(e){}})();
+</script>
+<link rel="preload" href="assets/fonts/Onest-Variable.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/Spectral-Light.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="css/tokens.css">
+<link rel="stylesheet" href="css/site.css">
+<noscript><style>html:not(.is-ready) body{opacity:1!important;animation:none!important}</style></noscript>
+</head>
+<body>
+<div id="site-header"></div>
+
+<main id="main">
+  <header class="page-head">
+    <div class="wrap">
+      <h1 class="page-title" data-i18n="principles.h1">Принципы</h1>
+      <p class="page-lead" data-i18n="principles.lead">Шесть правил, по которым мы принимаем решения о продукте.</p>
+    </div>
+  </header>
+
+  <div class="page-body">
+    <div class="wrap">
+      <dl class="rows">
+        <div class="row"><dt class="row-title" data-i18n="p1.t">Ясность важнее объёма</dt><dd class="row-body" data-i18n="p1.d">Короткий понятный ответ ценнее длинного и расплывчатого.</dd></div>
+        <div class="row"><dt class="row-title" data-i18n="p2.t">Приватность по умолчанию</dt><dd class="row-body" data-i18n="p2.d">Разговоры принадлежат людям. Мы не продаём данные третьим лицам и объясняем, что хранится и зачем.</dd></div>
+        <div class="row"><dt class="row-title" data-i18n="p3.t">Честно о возможностях</dt><dd class="row-body" data-i18n="p3.d">Мы не обещаем того, чего Elyon AI не умеет, и говорим, когда не уверены.</dd></div>
+        <div class="row"><dt class="row-title" data-i18n="p4.t">Малыми шагами</dt><dd class="row-body" data-i18n="p4.d">Лучше выпускать понятные улучшения часто, чем редкие большие перемены.</dd></div>
+        <div class="row"><dt class="row-title" data-i18n="p5.t">Простота как стиль</dt><dd class="row-body" data-i18n="p5.d">Интерфейс должен помогать думать, а не отвлекать. Каждая деталь на экране имеет причину.</dd></div>
+        <div class="row"><dt class="row-title" data-i18n="p6.t">Доступность для всех</dt><dd class="row-body" data-i18n="p6.d">Мы делаем Elyon AI доступным на разных платформах и языках, чтобы им можно было пользоваться там, где удобно.</dd></div>
+      </dl>
+    </div>
+  </div>
+</main>
+
+<div id="site-footer"></div>
+
+<script src="js/en.js"></script>
+<script src="js/news-data.js"></script>
+<script src="js/site.js"></script>
+</body>
+</html>

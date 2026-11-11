@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title data-i18n="meta.contact.title">Контакты — Elyrion</title>
+<meta name="description" content="Как связаться с командой Elyrion: почта и социальные сети." data-i18n-content="meta.contact.desc">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#050505" media="(prefers-color-scheme: dark)">
+<link rel="icon" type="image/png" href="assets/img/favicon-for-light-tab.png" media="(prefers-color-scheme: light)">
+<link rel="icon" type="image/png" href="assets/img/favicon-for-dark-tab.png" media="(prefers-color-scheme: dark)">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+<script>
+(function(){var d=document.documentElement;try{
+var t=localStorage.getItem('elyrion-theme');
+if(!t){t=matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light';}
+d.setAttribute('data-theme',t);
+var l=localStorage.getItem('elyrion-lang');
+if(!l){l=((navigator.language||'en').toLowerCase().indexOf('ru')===0)?'ru':'en';}
+d.lang=l;}catch(e){}})();
+</script>
+<link rel="preload" href="assets/fonts/Onest-Variable.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/Spectral-Light.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="css/tokens.css">
+<link rel="stylesheet" href="css/site.css">
+<noscript><style>html:not(.is-ready) body{opacity:1!important;animation:none!important}</style></noscript>
+</head>
+<body>
+<div id="site-header"></div>
+
+<main id="main">
+  <header class="page-head">
+    <div class="wrap">
+      <h1 class="page-title" data-i18n="contact.h1">Контакты</h1>
+      <p class="page-lead" data-i18n="contact.lead">Мы читаем всё и отвечаем, как только получается.</p>
+    </div>
+  </header>
+
+  <div class="page-body">
+    <div class="wrap">
+      <dl class="rows">
+        <div class="row">
+          <dt class="row-title" data-i18n="contact.mail">Почта</dt>
+          <dd class="row-body"><a href="mailto:elyonaiteam@gmail.com">elyonaiteam@gmail.com</a><br><span data-i18n="contact.mail.d">Вопросы об Elyon AI, идеи и сотрудничество — на один и тот же адрес.</span></dd>
+        </div>
+        <div class="row">
+          <dt class="row-title" data-i18n="contact.social">Социальные сети</dt>
+          <dd class="row-body">
+            <a href="https://x.com/Elyon_AI" target="_blank" rel="noopener noreferrer">X, @Elyon_AI</a><br>
+            <a href="https://www.instagram.com/elyon_ai_/" target="_blank" rel="noopener noreferrer">Instagram, @elyon_ai_</a>
+          </dd>
+        </div>
+      </dl>
+    </div>
+  </div>
+</main>
+
+<div id="site-footer"></div>
+
+<script src="js/en.js"></script>
+<script src="js/news-data.js"></script>
+<script src="js/site.js"></script>
+</body>
+</html>

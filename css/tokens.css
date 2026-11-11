@@ -1,0 +1,101 @@
+/*
+  Elyrion — дизайн-токены.
+  Палитра: глубокий чёрный, белый и градации серого. Акцентного цвета нет намеренно.
+  Тема задаётся атрибутом data-theme="light|dark" на <html> (ставится скриптом в <head>).
+  Без JavaScript работает системная тема через prefers-color-scheme.
+*/
+
+:root {
+  color-scheme: light;
+
+  /* Цвета: светлая тема */
+  --c-bg: #ffffff;
+  --c-surface: #f6f6f6;
+  --c-raised: #ececec;
+  --c-line: #e4e4e4;
+  --c-line-strong: #cdcdcd;
+  --c-text: #0a0a0a;
+  --c-text-2: #3f3f3f;
+  --c-muted: #6b6b6b;
+  --c-solid: #0a0a0a;
+  --c-solid-hover: #2b2b2b;
+  --c-on-solid: #ffffff;
+  --c-header: rgba(255, 255, 255, 0.78);
+
+  /* Глубина */
+  --glow: rgba(0, 0, 0, 0.055);
+  --mark-filter: drop-shadow(0 28px 36px rgba(0, 0, 0, 0.16));
+  --shadow-menu: 0 2px 4px rgba(0, 0, 0, 0.05), 0 18px 40px -12px rgba(0, 0, 0, 0.18);
+  --panel-bg: linear-gradient(180deg, #fafafa, #f3f3f3);
+  --panel-edge: inset 0 1px 0 rgba(255, 255, 255, 0.9);
+
+  /* Шрифты */
+  --font-display: "Spectral", Georgia, "Times New Roman", serif;
+  --font-ui: "Onest", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+
+  /* Типографическая шкала */
+  --t-xs: 0.8125rem;
+  --t-sm: 0.9375rem;
+  --t-base: 1.0625rem;
+  --t-lg: 1.25rem;
+  --t-xl: clamp(1.45rem, 1.2rem + 0.9vw, 1.95rem);
+  --t-2xl: clamp(1.9rem, 1.4rem + 1.9vw, 3rem);
+  --t-3xl: clamp(2.6rem, 1.5rem + 4.4vw, 5.4rem);
+
+  /* Размеры и ритм */
+  --max: 76rem;
+  --gutter: clamp(1.25rem, 4vw, 2.5rem);
+  --header-h: 4.25rem;
+  --section: clamp(4.5rem, 8vw, 8rem);
+  --r-sm: 0.5rem;
+  --r-lg: 1.25rem;
+}
+
+:root[data-theme="dark"] {
+  color-scheme: dark;
+
+  --c-bg: #050505;
+  --c-surface: #0d0d0d;
+  --c-raised: #151515;
+  --c-line: #222222;
+  --c-line-strong: #353535;
+  --c-text: #f3f3f3;
+  --c-text-2: #c6c6c6;
+  --c-muted: #8f8f8f;
+  --c-solid: #f3f3f3;
+  --c-solid-hover: #d6d6d6;
+  --c-on-solid: #050505;
+  --c-header: rgba(5, 5, 5, 0.72);
+
+  --glow: rgba(255, 255, 255, 0.08);
+  --mark-filter: drop-shadow(0 34px 44px rgba(0, 0, 0, 0.75)) drop-shadow(0 0 46px rgba(255, 255, 255, 0.07));
+  --shadow-menu: 0 2px 4px rgba(0, 0, 0, 0.5), 0 22px 48px -12px rgba(0, 0, 0, 0.85);
+  --panel-bg: linear-gradient(180deg, #121212, #0a0a0a);
+  --panel-edge: inset 0 1px 0 rgba(255, 255, 255, 0.07);
+}
+
+/* Запасной вариант без JavaScript: следуем системной теме */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme]) {
+    color-scheme: dark;
+
+    --c-bg: #050505;
+    --c-surface: #0d0d0d;
+    --c-raised: #151515;
+    --c-line: #222222;
+    --c-line-strong: #353535;
+    --c-text: #f3f3f3;
+    --c-text-2: #c6c6c6;
+    --c-muted: #8f8f8f;
+    --c-solid: #f3f3f3;
+    --c-solid-hover: #d6d6d6;
+    --c-on-solid: #050505;
+    --c-header: rgba(5, 5, 5, 0.72);
+
+    --glow: rgba(255, 255, 255, 0.08);
+    --mark-filter: drop-shadow(0 34px 44px rgba(0, 0, 0, 0.75)) drop-shadow(0 0 46px rgba(255, 255, 255, 0.07));
+    --shadow-menu: 0 2px 4px rgba(0, 0, 0, 0.5), 0 22px 48px -12px rgba(0, 0, 0, 0.85);
+    --panel-bg: linear-gradient(180deg, #121212, #0a0a0a);
+    --panel-edge: inset 0 1px 0 rgba(255, 255, 255, 0.07);
+  }
+}

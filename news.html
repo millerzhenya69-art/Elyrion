@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title data-i18n="meta.news.title">Новости — Elyrion</title>
+<meta name="description" content="Новости Elyrion и обновления Elyon AI." data-i18n-content="meta.news.desc">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#050505" media="(prefers-color-scheme: dark)">
+<link rel="icon" type="image/png" href="assets/img/favicon-for-light-tab.png" media="(prefers-color-scheme: light)">
+<link rel="icon" type="image/png" href="assets/img/favicon-for-dark-tab.png" media="(prefers-color-scheme: dark)">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+<script>
+(function(){var d=document.documentElement;try{
+var t=localStorage.getItem('elyrion-theme');
+if(!t){t=matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light';}
+d.setAttribute('data-theme',t);
+var l=localStorage.getItem('elyrion-lang');
+if(!l){l=((navigator.language||'en').toLowerCase().indexOf('ru')===0)?'ru':'en';}
+d.lang=l;}catch(e){}})();
+</script>
+<link rel="preload" href="assets/fonts/Onest-Variable.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/Spectral-Light.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="css/tokens.css">
+<link rel="stylesheet" href="css/site.css">
+<noscript><style>html:not(.is-ready) body{opacity:1!important;animation:none!important}</style></noscript>
+</head>
+<body>
+<div id="site-header"></div>
+
+<main id="main">
+  <header class="page-head">
+    <div class="wrap">
+      <h1 class="page-title" data-i18n="news.h1">Новости</h1>
+      <p class="page-lead" data-i18n="news.lead">Новости Elyrion и обновления Elyon AI.</p>
+    </div>
+  </header>
+
+  <div class="page-body">
+    <div class="wrap">
+      <ul class="news-list" id="news-list" hidden></ul>
+      <div class="empty" id="news-empty">
+        <h2 class="empty-title" data-i18n="news.empty.t">Пока здесь тихо</h2>
+        <p class="empty-text" data-i18n="news.empty.d">Мы опубликуем первые записи, когда будет о чём рассказать. А пока можно попробовать Elyon AI.</p>
+        <a class="btn btn--primary" href="https://elyon-ai-web.vercel.app/auth.html" data-i18n="news.empty.cta">Открыть Elyon AI</a>
+      </div>
+    </div>
+  </div>
+</main>
+
+<div id="site-footer"></div>
+
+<script src="js/en.js"></script>
+<script src="js/news-data.js"></script>
+<script src="js/site.js"></script>
+</body>
+</html>

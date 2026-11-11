@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title data-i18n="meta.careers.title">Карьера — Elyrion</title>
+<meta name="description" content="Elyrion — небольшая команда. Расскажем, как с нами связаться, если вы хотите создавать Elyon AI вместе." data-i18n-content="meta.careers.desc">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#050505" media="(prefers-color-scheme: dark)">
+<link rel="icon" type="image/png" href="assets/img/favicon-for-light-tab.png" media="(prefers-color-scheme: light)">
+<link rel="icon" type="image/png" href="assets/img/favicon-for-dark-tab.png" media="(prefers-color-scheme: dark)">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+<script>
+(function(){var d=document.documentElement;try{
+var t=localStorage.getItem('elyrion-theme');
+if(!t){t=matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light';}
+d.setAttribute('data-theme',t);
+var l=localStorage.getItem('elyrion-lang');
+if(!l){l=((navigator.language||'en').toLowerCase().indexOf('ru')===0)?'ru':'en';}
+d.lang=l;}catch(e){}})();
+</script>
+<link rel="preload" href="assets/fonts/Onest-Variable.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/Spectral-Light.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="css/tokens.css">
+<link rel="stylesheet" href="css/site.css">
+<noscript><style>html:not(.is-ready) body{opacity:1!important;animation:none!important}</style></noscript>
+</head>
+<body>
+<div id="site-header"></div>
+
+<main id="main">
+  <header class="page-head">
+    <div class="wrap">
+      <h1 class="page-title" data-i18n="careers.h1">Карьера</h1>
+      <p class="page-lead" data-i18n="careers.lead">Мы небольшая команда и растём осторожно.</p>
+    </div>
+  </header>
+
+  <div class="page-body">
+    <div class="wrap">
+      <div class="empty">
+        <h2 class="empty-title" data-i18n="careers.open.t">Открытых позиций сейчас нет</h2>
+        <p class="empty-text" data-i18n="careers.open.d" style="margin-bottom:0">Но мы всегда рады знакомиться с людьми, которым близок наш подход. Расскажите, чем вы хотели бы заниматься.</p>
+      </div>
+    </div>
+  </div>
+
+  <section class="section section--rule" aria-labelledby="areas">
+    <div class="wrap">
+      <div class="section-head">
+        <h2 class="section-title" id="areas" data-i18n="careers.areas.h">Над чем мы работаем</h2>
+      </div>
+      <dl class="rows">
+        <div class="row"><dt class="row-title" data-i18n="careers.a1.t">Интерфейсы и дизайн</dt><dd class="row-body" data-i18n="careers.a1.d">Сайты и приложения Elyon AI, дизайн-система, анимации.</dd></div>
+        <div class="row"><dt class="row-title" data-i18n="careers.a2.t">Серверная часть</dt><dd class="row-body" data-i18n="careers.a2.d">Надёжность, скорость ответов и безопасность аккаунтов.</dd></div>
+        <div class="row"><dt class="row-title" data-i18n="careers.a3.t">Машинное обучение</dt><dd class="row-body" data-i18n="careers.a3.d">Качество ответов и работа с моделями.</dd></div>
+        <div class="row"><dt class="row-title" data-i18n="careers.a4.t">Сообщество и контент</dt><dd class="row-body" data-i18n="careers.a4.d">Тексты, видео и поддержка пользователей.</dd></div>
+      </dl>
+    </div>
+  </section>
+
+  <section class="section section--rule" aria-labelledby="how">
+    <div class="wrap cta-band">
+      <div>
+        <h2 class="section-title" id="how" data-i18n="careers.how.h">Как нам написать</h2>
+        <p class="section-lead" data-i18n="careers.how.d">Расскажите о себе, пришлите ссылки на работы и опишите, чем хотите заниматься.</p>
+      </div>
+      <a class="btn btn--primary" href="mailto:elyonaiteam@gmail.com?subject=Elyrion%20%E2%80%94%20Careers" data-i18n="careers.how.cta">Написать команде</a>
+    </div>
+  </section>
+</main>
+
+<div id="site-footer"></div>
+
+<script src="js/en.js"></script>
+<script src="js/news-data.js"></script>
+<script src="js/site.js"></script>
+</body>
+</html>

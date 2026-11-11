@@ -1,0 +1,161 @@
+/*
+  Elyrion — английские тексты.
+  Русский текст лежит в HTML, здесь только английский по ключу из data-i18n.
+  Добавили новый data-i18n в HTML — добавьте такой же ключ сюда.
+*/
+window.ELYRION_EN = {
+  /* Шапка и подвал */
+  'chrome.skip': 'Skip to content',
+  'chrome.home': 'Elyrion — home',
+  'chrome.nav': 'Main navigation',
+  'chrome.lang': 'Language',
+  'chrome.theme': 'Switch theme',
+  'chrome.menu': 'Menu',
+
+  'nav.products': 'Products',
+  'nav.company': 'Company',
+  'nav.news': 'News',
+  'nav.about': 'About',
+  'nav.about.d': 'Who we are and how we work',
+  'nav.principles': 'Principles',
+  'nav.principles.d': 'What guides our decisions',
+  'nav.careers': 'Careers',
+  'nav.careers.d': 'How to join us',
+  'nav.contact': 'Contact',
+  'nav.contact.d': 'Get in touch with the team',
+  'nav.open': 'Open Elyon AI',
+
+  'foot.note': 'Elyrion is the brand and team behind Elyon AI.',
+  'foot.nav': 'Footer navigation',
+  'foot.products': 'Products',
+  'foot.webapp': 'Web app',
+  'foot.download': 'Download the app',
+  'foot.company': 'Company',
+  'foot.follow': 'Follow us',
+  'foot.privacy': 'Elyon AI privacy',
+
+  /* Общие карточки возможностей Elyon AI */
+  'feat.reason.t': 'Deep reasoning',
+  'feat.reason.d': 'Models work through the problem first and answer after, so replies carry less noise and more substance.',
+  'feat.files.t': 'Files and images',
+  'feat.files.d': 'Documents, images, code and audio: Elyon AI reads attachments and answers to the point.',
+  'feat.web.t': 'Web search',
+  'feat.web.d': 'When you need prices, news or facts, Elyon AI searches the web on its own and stays out of your way.',
+  'feat.privacy.t': 'Private by default',
+  'feat.privacy.d': 'Your conversations stay yours: we do not sell data to third parties.',
+
+  /* Принципы */
+  'p1.t': 'Clarity over volume',
+  'p1.d': 'A short, clear answer beats a long, vague one.',
+  'p2.t': 'Privacy by default',
+  'p2.d': 'Conversations belong to people. We do not sell data to third parties and we explain what is stored and why.',
+  'p3.t': 'Honest about limits',
+  'p3.d': 'We do not promise what Elyon AI cannot do, and we say when we are not sure.',
+  'p4.t': 'Small steps',
+  'p4.d': 'Frequent, understandable improvements beat rare, sweeping changes.',
+  'p5.t': 'Simplicity as a style',
+  'p5.d': 'An interface should help people think, not distract them. Every detail on screen has a reason.',
+  'p6.t': 'Access for everyone',
+  'p6.d': 'We make Elyon AI available across platforms and languages so people can use it wherever it suits them.',
+
+  /* Главная */
+  'meta.home.title': 'Elyrion — tools that help people think',
+  'meta.home.desc': 'Elyrion is the team building Elyon AI: a personal intelligence layer for work, study and everyday questions.',
+  'home.h1': 'Tools that help people think deeper',
+  'home.lead': 'Elyrion is a small team building Elyon AI: a personal intelligence layer for work, study and everyday questions.',
+  'home.cta1': 'Open Elyon AI',
+  'home.cta2': 'About the team',
+  'home.statement': 'Good AI is measured by clarity, not by the number of answers. We build an assistant that thinks before it responds, can search the web and keeps your conversations yours.',
+  'home.product.p': 'One account across your devices: web, Windows, macOS, Linux and Android. On iPhone, Elyon AI installs to your Home Screen as an app.',
+  'home.product.more': 'About the product',
+  'home.principles.h': 'Principles',
+  'home.principles.p': 'What guides our decisions about the product.',
+  'home.principles.all': 'All principles',
+  'home.news.h': 'News',
+  'home.news.all': 'All news',
+  'home.careers': 'We are a small team and we grow carefully. If our approach resonates with you, write to us.',
+  'home.careers.cta': 'See careers',
+
+  /* О нас */
+  'meta.about.title': 'About — Elyrion',
+  'meta.about.desc': 'Elyrion is the brand and team behind Elyon AI. How we work and where we are heading.',
+  'about.h1': 'About Elyrion',
+  'about.lead': 'Elyrion is the brand and team behind Elyon AI.',
+  'about.s1.h': 'What we do',
+  'about.s1.p': 'We build Elyon AI, a personal assistant for people who value speed, clarity and depth. It runs on the web and on major platforms and understands Russian and English.',
+  'about.s2.h': 'How we work',
+  'about.s2.p': 'We ship updates in small pieces and often, not once every few months. Mistakes surface sooner and useful changes reach people without a long wait.',
+  'about.s3.h': 'Where we are heading',
+  'about.s3.p': 'We are growing Elyon AI in Russian and English and across all major platforms, aiming to make it clearer and more useful with every release.',
+
+  /* Продукты */
+  'meta.products.title': 'Products — Elyrion',
+  'meta.products.desc': 'Elyon AI: a personal intelligence layer for web, Windows, macOS, Linux, Android and iPhone.',
+  'products.lead': 'Ask anything. Understand everything. A personal intelligence layer built for clarity, speed and depth.',
+  'products.cta1': 'Open the web app',
+  'products.cta2': 'Download the app',
+  'products.where': 'Where it runs',
+  'plat.web.t': 'Web',
+  'plat.web.d': 'Works in any browser, nothing to install.',
+  'plat.win.t': 'Windows',
+  'plat.win.d': 'Windows 10 and 11, 64-bit.',
+  'plat.android.t': 'Android',
+  'plat.android.d': 'Android 5.0 and newer.',
+  'plat.mac.t': 'macOS',
+  'plat.mac.d': 'Apple Silicon and Intel.',
+  'plat.linux.t': 'Linux',
+  'plat.linux.d': 'x64, tar.gz bundle.',
+  'plat.ios.t': 'iPhone and iPad',
+  'plat.ios.d': 'Add Elyon AI to your Home Screen from Safari and it opens like a native app.',
+
+  /* Принципы (страница) */
+  'meta.principles.title': 'Principles — Elyrion',
+  'meta.principles.desc': 'Six rules Elyrion follows when making decisions about Elyon AI.',
+  'principles.h1': 'Principles',
+  'principles.lead': 'Six rules we use to make product decisions.',
+
+  /* Новости */
+  'meta.news.title': 'News — Elyrion',
+  'meta.news.desc': 'News from Elyrion and updates to Elyon AI.',
+  'news.h1': 'News',
+  'news.lead': 'News from Elyrion and updates to Elyon AI.',
+  'news.empty.t': 'It is quiet here for now',
+  'news.empty.d': 'We will post the first entries when there is something to share. In the meantime, you can try Elyon AI.',
+  'news.empty.cta': 'Open Elyon AI',
+
+  /* Карьера */
+  'meta.careers.title': 'Careers — Elyrion',
+  'meta.careers.desc': 'Elyrion is a small team. Learn how to get in touch if you want to build Elyon AI with us.',
+  'careers.h1': 'Careers',
+  'careers.lead': 'We are a small team and we grow carefully.',
+  'careers.open.t': 'No open positions right now',
+  'careers.open.d': 'We are still glad to meet people who resonate with our approach. Tell us what you would like to work on.',
+  'careers.areas.h': 'What we work on',
+  'careers.a1.t': 'Interfaces and design',
+  'careers.a1.d': 'Websites and apps for Elyon AI, the design system, animation.',
+  'careers.a2.t': 'Server side',
+  'careers.a2.d': 'Reliability, response speed and account security.',
+  'careers.a3.t': 'Machine learning',
+  'careers.a3.d': 'Answer quality and working with models.',
+  'careers.a4.t': 'Community and content',
+  'careers.a4.d': 'Writing, video and user support.',
+  'careers.how.h': 'How to write to us',
+  'careers.how.d': 'Tell us about yourself, send links to your work and describe what you want to do.',
+  'careers.how.cta': 'Write to the team',
+
+  /* Контакты */
+  'meta.contact.title': 'Contact — Elyrion',
+  'meta.contact.desc': 'How to reach the Elyrion team: email and social networks.',
+  'contact.h1': 'Contact',
+  'contact.lead': 'We read everything and reply as soon as we can.',
+  'contact.mail': 'Email',
+  'contact.mail.d': 'Questions about Elyon AI, ideas and partnerships all go to the same address.',
+  'contact.social': 'Social networks',
+
+  /* 404 */
+  'meta.404.title': 'Page not found — Elyrion',
+  'meta.404.desc': 'This page does not exist.',
+  '404.h1': 'Page not found',
+  '404.lead': 'This page does not exist or has moved. Head back to the home page.',
+  '404.cta': 'Go to the home page'
+};

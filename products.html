@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title data-i18n="meta.products.title">Продукты — Elyrion</title>
+<meta name="description" content="Elyon AI: персональный интеллектуальный слой для веба, Windows, macOS, Linux, Android и iPhone." data-i18n-content="meta.products.desc">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#050505" media="(prefers-color-scheme: dark)">
+<link rel="icon" type="image/png" href="assets/img/favicon-for-light-tab.png" media="(prefers-color-scheme: light)">
+<link rel="icon" type="image/png" href="assets/img/favicon-for-dark-tab.png" media="(prefers-color-scheme: dark)">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+<script>
+(function(){var d=document.documentElement;try{
+var t=localStorage.getItem('elyrion-theme');
+if(!t){t=matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light';}
+d.setAttribute('data-theme',t);
+var l=localStorage.getItem('elyrion-lang');
+if(!l){l=((navigator.language||'en').toLowerCase().indexOf('ru')===0)?'ru':'en';}
+d.lang=l;}catch(e){}})();
+</script>
+<link rel="preload" href="assets/fonts/Onest-Variable.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/Spectral-Light.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="css/tokens.css">
+<link rel="stylesheet" href="css/site.css">
+<noscript><style>html:not(.is-ready) body{opacity:1!important;animation:none!important}</style></noscript>
+</head>
+<body>
+<div id="site-header"></div>
+
+<main id="main">
+  <header class="page-head">
+    <div class="wrap">
+      <h1 class="page-title">Elyon AI</h1>
+      <p class="page-lead" data-i18n="products.lead">Спросите о чём угодно. Поймите всё. Персональный интеллектуальный слой, созданный для ясности, скорости и глубины.</p>
+      <div class="actions" style="margin-top:2rem">
+        <a class="btn btn--primary" href="https://elyon-ai-web.vercel.app/auth.html" data-i18n="products.cta1">Открыть веб-версию</a>
+        <a class="btn btn--ghost" href="https://elyon-ai-web.vercel.app/#download" data-i18n="products.cta2">Скачать приложение</a>
+      </div>
+    </div>
+  </header>
+
+  <div class="page-body">
+    <div class="wrap">
+      <dl class="rows">
+        <div class="row"><dt class="row-title" data-i18n="feat.reason.t">Глубокое рассуждение</dt><dd class="row-body" data-i18n="feat.reason.d">Модели сначала обдумывают задачу и только потом отвечают, поэтому в ответах меньше шума и больше смысла.</dd></div>
+        <div class="row"><dt class="row-title" data-i18n="feat.files.t">Работа с файлами</dt><dd class="row-body" data-i18n="feat.files.d">Документы, изображения, код и аудио: Elyon AI читает вложения и отвечает по существу.</dd></div>
+        <div class="row"><dt class="row-title" data-i18n="feat.web.t">Поиск в сети</dt><dd class="row-body" data-i18n="feat.web.d">Когда нужны цены, новости или факты, Elyon AI ищет в интернете сам и не отвлекает лишним.</dd></div>
+        <div class="row"><dt class="row-title" data-i18n="feat.privacy.t">Приватность по умолчанию</dt><dd class="row-body" data-i18n="feat.privacy.d">Ваши разговоры остаются вашими: мы не продаём данные третьим лицам.</dd></div>
+      </dl>
+    </div>
+  </div>
+
+  <section class="section section--rule" aria-labelledby="where">
+    <div class="wrap">
+      <div class="section-head">
+        <h2 class="section-title" id="where" data-i18n="products.where">Где доступен</h2>
+      </div>
+      <dl class="rows">
+        <div class="row"><dt class="row-title" data-i18n="plat.web.t">Веб</dt><dd class="row-body" data-i18n="plat.web.d">Работает в любом браузере, ничего устанавливать не нужно.</dd></div>
+        <div class="row"><dt class="row-title" data-i18n="plat.win.t">Windows</dt><dd class="row-body" data-i18n="plat.win.d">Windows 10 и 11, 64-бит.</dd></div>
+        <div class="row"><dt class="row-title" data-i18n="plat.android.t">Android</dt><dd class="row-body" data-i18n="plat.android.d">Android 5.0 и новее.</dd></div>
+        <div class="row"><dt class="row-title" data-i18n="plat.mac.t">macOS</dt><dd class="row-body" data-i18n="plat.mac.d">Apple Silicon и Intel.</dd></div>
+        <div class="row"><dt class="row-title" data-i18n="plat.linux.t">Linux</dt><dd class="row-body" data-i18n="plat.linux.d">x64, архив tar.gz.</dd></div>
+        <div class="row"><dt class="row-title" data-i18n="plat.ios.t">iPhone и iPad</dt><dd class="row-body" data-i18n="plat.ios.d">Добавьте Elyon AI на экран «Домой» из Safari, и он откроется как обычное приложение.</dd></div>
+      </dl>
+    </div>
+  </section>
+</main>
+
+<div id="site-footer"></div>
+
+<script src="js/en.js"></script>
+<script src="js/news-data.js"></script>
+<script src="js/site.js"></script>
+</body>
+</html>
